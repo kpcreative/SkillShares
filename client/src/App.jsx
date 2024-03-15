@@ -12,7 +12,7 @@ function App() {
   const currentUser=false;
   const Layout=()=>{
     return (
-      <div>
+      <div classname="flex h-cover">
         <Home/>
       </div>
     );
