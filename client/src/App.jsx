@@ -6,14 +6,16 @@ import {
   Navigate,
 } from "react-router-dom";
 import Home from "./pages/Home";
+import Navbar from "./components/Navbar";
 
 
 function App() {
   const currentUser=false;
   const Layout=()=>{
     return (
-      <div classname="flex h-cover">
-        <Home/>
+      <div className="bg-black">
+        <Navbar/>
+        <Outlet/>
       </div>
     );
 
