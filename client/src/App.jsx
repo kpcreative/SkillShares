@@ -6,17 +6,17 @@ import {
   Navigate,
 } from "react-router-dom";
 import Home from "./pages/Home";
-import Navbar from "./components/Navbar";
+import Nav from "./components/Nav";
 
 
 function App() {
   const currentUser=false;
   const Layout=()=>{
     return (
-      <div className="bg-black">
-        <Navbar/>
-        <Outlet/>
-      </div>
+       <div>
+        <Nav/>
+        <Home/>
+       </div>
     );
 
   };
